@@ -6,7 +6,6 @@ package pgstore
 
 import (
 	"github.com/google/uuid"
-	"github.com/jackc/pgx/v5/pgtype"
 )
 
 type Message struct {
@@ -19,5 +18,5 @@ type Message struct {
 
 type Room struct {
 	ID    uuid.UUID
-	Theme pgtype.Text
+	Theme string
 }

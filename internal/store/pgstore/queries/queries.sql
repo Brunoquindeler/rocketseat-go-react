@@ -8,7 +8,7 @@ SELECT "id", "theme"
 FROM rooms;
 
 -- name: InsertRoom :one
-INSERT INTO rooms ("theme") 
+INSERT INTO rooms ( "theme" ) 
 VALUES ( $1 ) 
 RETURNING "id";
 

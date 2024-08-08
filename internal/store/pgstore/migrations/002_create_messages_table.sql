@@ -4,6 +4,7 @@ create table if not exists messages (
     "message" varchar(255) not null,
     "reaction_count" bigint not null default 0,
     "answered" boolean not null default false,
+    
     foreign key (room_id) references rooms(id)
 );
 
